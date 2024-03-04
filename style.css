@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    background: #4e4d8a;
+    padding: 10px;
+
+}
+.application{
+    width: 600px;
+    background: #01003a;
+    color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 40px 70px;
+    border-radius: 10px;
+    
+}
+.application h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.row{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.row input{
+    width: 450px;
+    height: 50px;
+    size: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.row button{
+    width: 60px;
+    height: 50px;
+    size: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.row button:hover{
+    background: red;
+    color: #fff;
+    transition: 0.5s;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 10px 6px 10px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+ul li::before{
+    content: '';
+    position:absolute;
+    height: 25px;
+    width: 100%;
+    border-radius: 20px;
+
+}
+ul li.selected{
+    color: #555;
+    text-decoration: line-through;
+
+}
+ul li.selected::before{
+    background: transparent;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+
+}
